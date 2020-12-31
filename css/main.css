@@ -24,6 +24,36 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: #fff;
+  text-align: justify-all;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h3 {
+  font-style: bold;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.25rem;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*
 =============== 
 Nav
@@ -123,16 +153,27 @@ input[type="date" i] {
 /* ==========================================================================
    #SPACING
    ========================================================================== */
+.p-t-50 {
+  padding-top: 50px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
 .p-t-100 {
   padding-top: 100px;
 }
-
 .p-t-20 {
   padding-top: 20px;
 }
 
 .p-b-100 {
   padding-bottom: 100px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
 }
 
 /* ==========================================================================
