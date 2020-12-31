@@ -12,11 +12,18 @@
 	<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
 	<link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 	<link href="css/main.css" rel="stylesheet" media="all">
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+	<style>
+		h2 {
+			font-family: 'Cinzel';
+		}
+	</style>
 </head>
 
 <body>
 	<nav>
 		<div class="nav-center">
+			<img src="images/logo.png" style="width: 40px">
 			<h2>HospitecH</h2>
 			<ul class="nav-links">
 				<li>
@@ -82,10 +89,10 @@
 								<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="text" placeholder="Phone Number" name="accphone">
+							<input class="input--style-1" type="number" placeholder="Phone Number" name="accphone">
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="text" placeholder="e-Mail" name="accemail">
+							<input class="input--style-1" type="email" placeholder="e-Mail" name="accemail">
 						</div>
 						<div class="p-t-20">
 							<button class="btn btn--radius" type="submit">SUBMIT</button>
@@ -95,18 +102,11 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Jquery JS-->
 	<script src="vendor/jquery/jquery.min.js"></script>
-	<!-- Vendor JS-->
 	<script src="vendor/select2/select2.min.js"></script>
 	<script src="vendor/datepicker/moment.min.js"></script>
 	<script src="vendor/datepicker/daterangepicker.js"></script>
-
-	<!-- Main JS-->
 	<script src="js/global.js"></script>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+</body>
 </html>
-<!-- end document-->
