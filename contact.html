@@ -7,7 +7,9 @@
 	<title>HospitecH</title>
 	<link rel="icon" href="images/logo.png">
 	<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+	<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
 	<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+	<link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 	<link href="css/main.css" rel="stylesheet" media="all">
 	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 	<style>
@@ -42,58 +44,54 @@
 		<div class="wrapper wrapper--w680">
 			<div class="card card-1">
 				<div class="card-body">
-					<h2 class="title">NEW CONTACT DETAILS</h2>
-					<form id="contactform">
+					<h2 class="title">NEW OPPORTUNITY DETAILS</h2>
+					<form id="opportunityform">
 						<div class="input-group">
-							<div class="rs-select2 js-select-simple select--no-search">
-								<select name="salutation">
-									<option disabled="disabled" selected="selected">Salutation</option>
-									<option>Mr.</option>
-									<option>Ms.</option>
-									<option>Mrs.</option>
-									<option>Dr.</option>
-								</select>
-								<div class="select-dropdown"></div>
-							</div>
+							<input class="input--style-1" type="text" placeholder="Opportunity Name" name="oppname">
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="text" placeholder="First Name" name="fname">
-						</div>
-						<div class="input-group">
-							<input class="input--style-1" type="text" placeholder="Last Name" name="lname">
-						</div>
-						<div class="input-group">
-							<input class="input--style-1" type="text" placeholder="Designation" name="designation">
+							<input class="input--style-1" type="text" placeholder="Amount" name="amount">
 						</div>
 						<div class="input-group">
 							<div class="rs-select2 js-select-simple select--no-search">
-								<select name="hospitalname">
-									<option disabled="disabled" selected="selected">Account Name</option>
-									<option>All India Institute of Medical Sciences</option>
-									<option>Apollo Hospitals</option>
-									<option>Medanta</option>
-									<option>The Johns Hopkins Hospital</option>
-									<option>Toronto General Hospital</option>
+								<select name="contactass">
+									<option disabled="disabled" selected="selected">Contact Associated</option>
+									<option>Mehul Khurrana</option>
+									<option>Nischal Sharma</option>
+									<option>Purvi Mandot</option>
+									<option>Shivam Dwivedi</option>
+									<option>Ujjawal Kumar</option>
 								</select>
 								<div class="select-dropdown"></div>
 							</div>
 						</div>
 						<div class="input-group">
 							<div class="rs-select2 js-select-simple select--no-search">
-								<select name="influence">
-									<option disabled="disabled" selected="selected">Influence</option>
-									<option>Low</option>
-									<option>Reasonable</option>
-									<option>High</option>
+								<select name="stage">
+									<option disabled="disabled" selected="selected">Stage</option>
+									<option>Prospecting</option>
+									<option>Qualification</option>
+									<option>Need Analysis</option>
+									<option>Value Proposition</option>
+									<option>Id. Decsion Makers</option>
+									<option>Perception Analysis</option>
+									<option>Proposal/Price Quote</option>
+									<option>Negotiation/Review</option>
+									<option>Closed Won</option>
+									<option>Closed Lost</option>
 								</select>
 								<div class="select-dropdown"></div>
 							</div>
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="number" placeholder="Phone Number" name="conphone">
+								<input class="input--style-1 js-datepicker" type="text" placeholder="Close Date" name="closedate">
+								<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="email" placeholder="e-Mail" name="conemail">
+							<input class="input--style-1" type="number" placeholder="Phone Number" name="accphone">
+						</div>
+						<div class="input-group">
+							<input class="input--style-1" type="email" placeholder="e-Mail" name="accemail">
 						</div>
 						<div class="p-t-20">
 							<button class="btn btn--radius" type="submit">SUBMIT</button>
@@ -103,10 +101,12 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/datepicker/moment.min.js"></script>
+	<script src="vendor/datepicker/daterangepicker.js"></script>
 	<script src="js/global.js"></script>
-	<script src="js/contact.js"></script>
-
+	<script src="js/opportunity.js"></script>
 </body>
 </html>
