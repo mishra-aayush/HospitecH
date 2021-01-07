@@ -43,10 +43,10 @@
 			<div class="card card-1">
 				<div class="card-body">
 					<h2 class="title">NEW CONTACT DETAILS</h2>
-					<form method="POST">
+					<form id="contactform">
 						<div class="input-group">
 							<div class="rs-select2 js-select-simple select--no-search">
-								<select name="hospitaltype">
+								<select name="salutation">
 									<option disabled="disabled" selected="selected">Salutation</option>
 									<option>Mr.</option>
 									<option>Ms.</option>
@@ -67,7 +67,7 @@
 						</div>
 						<div class="input-group">
 							<div class="rs-select2 js-select-simple select--no-search">
-								<select name="hospitaltype">
+								<select name="hospitalname">
 									<option disabled="disabled" selected="selected">Account Name</option>
 									<option>All India Institute of Medical Sciences</option>
 									<option>Apollo Hospitals</option>
@@ -80,7 +80,7 @@
 						</div>
 						<div class="input-group">
 							<div class="rs-select2 js-select-simple select--no-search">
-								<select name="hospitaltype">
+								<select name="influence">
 									<option disabled="disabled" selected="selected">Influence</option>
 									<option>Low</option>
 									<option>Reasonable</option>
@@ -90,10 +90,10 @@
 							</div>
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="number" placeholder="Phone Number" name="accphone">
+							<input class="input--style-1" type="number" placeholder="Phone Number" name="conphone">
 						</div>
 						<div class="input-group">
-							<input class="input--style-1" type="email" placeholder="e-Mail" name="accemail">
+							<input class="input--style-1" type="email" placeholder="e-Mail" name="conemail">
 						</div>
 						<div class="p-t-20">
 							<button class="btn btn--radius" type="submit">SUBMIT</button>
@@ -106,6 +106,7 @@
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/select2/select2.min.js"></script>
 	<script src="js/global.js"></script>
+	<script src="js/contact.js"></script>
 
 </body>
 </html>
